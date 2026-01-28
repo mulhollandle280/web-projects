@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* TODO 1: Use the grid-template-columns property plus the repeat and minmax functions and the keyword auto-fit to set up your grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+      padding: 15px;
+    /* TODO 2: For your minmax ( ) function, set a floor (minimum) width in pixels and a ceiling (maximum) width of 1fr */
+    
+    /* TODO 3: Set a small gap for your image gallery 
+      
+      padding: 15px;
+    }
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      body{
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      p{
-        color: red;
-      }
-    </style>
-  </head>
+    /* Prevents images from overflowing their respective grid cells */
+    .gallery img {
+      width: 100%;
+   /* TODO 4: Set an image height -- in pixels -- so each image has a clean, uniform look */
+
+   /* TODO 5: Use CSS object-fit property so your images don't look squished or distorted */
+  
+
+    }
+  </style>
+</head>
 <body>
-  <h3>This is a test for Github!!!!!!!!!</h3>
-  <p>Just a short paragraph!</p>
+<!-- TODO 6: Add a DIV with a class of container -->
+
+<!-- TODO 7: Add 12 DIV elements to your container DIV -->
+<!-- NOTE: Each child DIV needs an image element with a custom ALT attribute -->
+
+ 
+
+
 </body>
+</html>
