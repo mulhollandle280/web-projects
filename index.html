@@ -4,11 +4,15 @@
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+	body{
+		color:beige;
+	}
+	  
     /* TODO 1: Use the grid-template-columns property plus the repeat and minmax functions and the keyword auto-fit to set up your grid */
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-      padding: 15px;
+    	display: grid;
+      	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+      	padding: 15px;
 	}
     /* TODO 2: For your minmax ( ) function, set a floor (minimum) width in pixels and a ceiling (maximum) width of 1fr */
     .gallery{
@@ -21,15 +25,16 @@
 
     /* Prevents images from overflowing their respective grid cells */
     .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      	width: 100%;
+      	height: 200px;
+      	object-fit: cover;
+	}
    /* TODO 4: Set an image height -- in pixels -- so each image has a clean, uniform look */
 
    /* TODO 5: Use CSS object-fit property so your images don't look squished or distorted */
 
 
-    }
+    
   </style>
 </head>
 <body>
