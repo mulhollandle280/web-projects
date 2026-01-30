@@ -4,98 +4,115 @@
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	root{
+		font-size: 16px;
+	}
+
 	body{
-		background-color:beige;
+		background-color:#f5f5dc;
+		max-width: 95%;
+		margin: 5px auto;
 	}
-	  
-    /* TODO 1: Use the grid-template-columns property plus the repeat and minmax functions and the keyword auto-fit to set up your grid */
-    .container {
-    	display: grid;
-      	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-      	padding: 15px;
-	}
-    /* TODO 2: For your minmax ( ) function, set a floor (minimum) width in pixels and a ceiling (maximum) width of 1fr */
-    .gallery{
-		text-align: center;
-	}
-    /* TODO 3: Set a small gap for your image gallery 
-      
+
+    .container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
       padding: 15px;
+	  gap: 1rem;
+	}
+
+	.container img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
 
-    /* Prevents images from overflowing their respective grid cells */
-    .gallery img {
-      	width: 100%;
-      	height: 200px;
-      	object-fit: cover;
+	.image{
+		display:grid;
+		grid-template-rows: 1fr auto;
 	}
-   /* TODO 4: Set an image height -- in pixels -- so each image has a clean, uniform look */
 
-   /* TODO 5: Use CSS object-fit property so your images don't look squished or distorted */
-
+	figcaption{
+		text-align: center;
+		background-color: #c7c79d;
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		font-weight: bold;
+		color: #443822;
+		padding: 0.25rem;
+	}
 
     
   </style>
 </head>
 <body>
-<!-- TODO 6: Add a DIV with a class of container -->
-<div class="container">
-	<div class="gallery">
-			<img src="starter-images/flower-baskets.jpg" alt="flowers">
-			Baskets of Flowers.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/bouquet.jpg" alt="bouquet">
-			A Bouquet.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/vegetables.jpg" alt="vegetables">
-			Veggie-tables.
-	</div>
-	<div class="gallery">
-		<img src="starter-images/journaling.jpg" alt="journaling">
-		A Journalist hard at work!
-
-	</div>
-	<div class="gallery">
-			<img src="starter-images/furniture-lg.jpg" alt="furniture-lg">
-			idk, a chair?
-	</div>
-	<div class="gallery">
-			<img src="starter-images/img3.jpg" alt="img3">
-			A beautiful view from water.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/img4.jpg" alt="img4">
-			Leaves, leaves, and more leaves.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/italy.jpg" alt="italy">
-			The average alley in Italy.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/greece.jpg" alt="greece">
-			A strange but cool building from greece.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/img8.jpg" alt="img8">
-			Another Journalist at work!
-	</div>
 	
-	<div class="gallery">
-			<img src="starter-images/img2.jpg" alt="img2">
-			A couple on the dock.
-	</div>
-	<div class="gallery">
-			<img src="starter-images/img6.jpg" alt="img6">
-			A woman on her car.
-	</div>
+<div class="container">
+	
+	<figure class="image image1">
+		<img src="/starter-images/flower-baskets.jpg" alt="flowers">
+		<figcaption>Baskets of Flowers.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/bouquet.jpg" alt="bouquet.jpg">
+		<figcaption>A Bouquet.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/vegetables.jpg" alt="vegetables.jpg">
+		<figcaption>Veg-uh-tuh-bles</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/journaling.jpg" alt="journaling.jpg">
+		<figcaption>idk, a chair?</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/furniture-lg.jpg" alt="furniture-lg.jpg">
+		<figcaption>idk, a chair?</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/img3.jpg" alt="img3.jpg">
+		<figcaption>A beautiful view from water.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/img4.jpg" alt="img4.jpg">
+		<figcaption>Leaves, leaves, and more leaves.</figcaption>
+	</figure>
+	<figure class="image image1">
+		<img src="/starter-images/italy.jpg" alt="italy.jpg">
+		<figcaption>The average alley in Italy.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/greece.jpg" alt="greece.jpg">
+		<figcaption>A strange but cool building from greece.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/img8.jpg" alt="img8.jpg">
+		<figcaption>Another Journalist at work!</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/img2.jpg" alt="img2.jpg">
+		<figcaption>A couple on the dock.</figcaption>
+	</figure>
+	
+	<figure class="image image1">
+		<img src="/starter-images/img6.jpg" alt="img6.jpg">
+		<figcaption>A woman on her car.</figcaption>
+	</figure>
+	
 </div>
-<!-- TODO 7: Add 12 DIV elements to your container DIV -->
-<!-- NOTE: Each child DIV needs an image element with a custom ALT attribute -->
-
- 
-
-
 </body>
 </html>
